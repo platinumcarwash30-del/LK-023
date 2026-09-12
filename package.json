@@ -1,0 +1,9 @@
+{
+  "name": "dubrovnik-sailing-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Premium Dubrovnik sailing experience site for LK-023.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

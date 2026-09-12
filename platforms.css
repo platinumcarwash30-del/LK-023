@@ -1,0 +1,2 @@
+.platform-booking{border-top:1px solid rgba(255,255,255,.18);margin-top:48px;padding-top:22px}.platform-label{display:block;color:#9fd4d7;font:10px var(--mono);letter-spacing:.14em;margin-bottom:14px}.platform-links{display:flex;flex-wrap:wrap;gap:9px}.platform-links a{border:1px solid rgba(255,255,255,.28);padding:10px 13px;font:11px var(--mono);color:rgba(255,255,255,.85)}.platform-links a:hover{border-color:var(--sea);color:var(--sea)}
+@media (max-width:850px){.platform-booking{margin-top:35px}}

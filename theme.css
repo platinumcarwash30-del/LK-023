@@ -1,0 +1,171 @@
+:root{
+  --core-night:#04131f;
+  --core-navy:#061827;
+  --core-deep:#08283a;
+  --core-mint:#d7eae6;
+  --core-aqua:#64c6d3;
+  --core-teal:#287f91;
+  --core-gold:#d6b06c;
+  --core-ink:#edf7f3;
+  --core-muted:rgba(237,247,243,.68);
+  --core-line:rgba(172,224,222,.2)
+}
+
+.ocean-core-theme{
+  color:var(--core-ink);
+  background:
+    radial-gradient(circle at 8% 18%,rgba(100,198,211,.17),transparent 28rem),
+    radial-gradient(circle at 86% 42%,rgba(40,127,145,.17),transparent 34rem),
+    linear-gradient(180deg,var(--core-night) 0%,var(--core-navy) 44%,#061d2b 100%);
+  background-attachment:fixed
+}
+
+.ocean-core-theme:before{
+  content:'';
+  position:fixed;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  opacity:.2;
+  background:
+    radial-gradient(ellipse at 30% 10%,rgba(255,255,255,.08),transparent 24rem),
+    repeating-linear-gradient(166deg,transparent 0 116px,rgba(100,198,211,.1) 118px,transparent 123px 220px)
+}
+
+.ocean-core-theme .intro,
+.ocean-core-theme .tours,
+.ocean-core-theme .stay,
+.ocean-core-theme .contact-grid{
+  background:transparent;
+  color:var(--core-ink)
+}
+
+.ocean-core-theme .section-kicker,
+.ocean-core-theme .eyebrow{
+  color:#8fc7cb
+}
+
+.ocean-core-theme .section-kicker span:first-child,
+.ocean-core-theme .main-nav span,
+.ocean-core-theme .text-link span,
+.ocean-core-theme .button span{
+  color:var(--core-gold)
+}
+
+.ocean-core-theme .intro-copy>p:not(.large-copy),
+.ocean-core-theme .story-heading p,
+.ocean-core-theme .tour-card-body p:not(.eyebrow),
+.ocean-core-theme .stay-copy p,
+.ocean-core-theme .skipper-copy>p:not(.large-copy),
+.ocean-core-theme .booking-inner>p,
+.ocean-core-theme .site-footer p{
+  color:var(--core-muted)
+}
+
+.ocean-core-theme .text-link{
+  border-bottom-color:var(--core-gold)
+}
+
+.ocean-core-theme .text-link:hover{
+  color:var(--core-aqua)
+}
+
+.ocean-core-theme .tour-card{
+  color:var(--core-ink);
+  background:linear-gradient(145deg,rgba(16,62,78,.96),rgba(7,36,52,.98));
+  border:1px solid var(--core-line);
+  box-shadow:0 22px 55px rgba(0,0,0,.22)
+}
+
+.ocean-core-theme .tour-card-body h3,
+.ocean-core-theme .journal-grid h3,
+.ocean-core-theme .section h2{
+  color:var(--core-ink)
+}
+
+.ocean-core-theme .marquee{
+  background:linear-gradient(90deg,var(--core-aqua),#9be1e2,var(--core-aqua));
+  color:var(--core-night)
+}
+
+.ocean-core-theme .marquee b{
+  color:var(--core-night)
+}
+
+.ocean-core-theme .story{
+  background:linear-gradient(135deg,rgba(7,39,55,.9),rgba(5,25,39,.94));
+  border-block:1px solid rgba(172,224,222,.12)
+}
+
+.ocean-core-theme .journal-grid span,
+.ocean-core-theme .feature-caption span,
+.ocean-core-theme .skipper-image span,
+.ocean-core-theme .booking-contact span{
+  color:#a9d9d8
+}
+
+.ocean-core-theme .visual-break{
+  background:var(--core-night)
+}
+
+.ocean-core-theme .stay-copy .button-dark{
+  background:var(--core-mint);
+  color:var(--core-night)
+}
+
+.ocean-core-theme .stay-copy .button-dark:hover{
+  background:var(--core-aqua)
+}
+
+.ocean-core-theme .skipper{
+  color:var(--core-ink);
+  background:linear-gradient(135deg,#0a3345,#0d4550)
+}
+
+.ocean-core-theme .booking{
+  background:linear-gradient(135deg,#020d17,var(--core-navy) 62%,#0a3342);
+  border-top:1px solid rgba(100,198,211,.2)
+}
+
+.ocean-core-theme .discount-cloud{
+  background:var(--core-mint);
+  color:var(--core-night)
+}
+
+.ocean-core-theme .discount-popover{
+  background:#e7f2ee;
+  color:var(--core-night)
+}
+
+.ocean-core-theme .discount-popover span{
+  color:#52717a
+}
+
+.ocean-core-theme .site-footer{
+  color:var(--core-ink);
+  background:linear-gradient(135deg,#03121e,#082b3a);
+  border-top:1px solid rgba(100,198,211,.2)
+}
+
+.ocean-core-theme .footer-brand,
+.ocean-core-theme .footer-label,
+.ocean-core-theme .footer-links a,
+.ocean-core-theme .footer-bottom{
+  color:var(--core-ink)
+}
+
+.ocean-core-theme .footer-brand .brand-copy small{
+  color:var(--core-muted)
+}
+
+.ocean-core-theme .footer-links a:hover{
+  color:var(--core-aqua)
+}
+
+@media (max-width:760px){
+  .ocean-core-theme{
+    background:
+      radial-gradient(circle at 12% 16%,rgba(100,198,211,.16),transparent 17rem),
+      linear-gradient(180deg,var(--core-night),var(--core-navy) 48%,#061d2b)
+  }
+}
