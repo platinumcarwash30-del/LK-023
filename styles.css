@@ -40,3 +40,7 @@
   .main-nav > a:not(.nav-book){padding:9px 12px}
 }
 @media (prefers-reduced-motion:reduce){.main-nav .nav-book::after{animation:none}}
+
+.main-nav > a:not(.nav-book).active{color:var(--sea);border-color:var(--sea);background:rgba(100,198,211,.17);box-shadow:0 0 18px rgba(100,198,211,.16)}
+.main-nav a[href="#journal"]:not(.active){color:inherit}
+#guides{scroll-margin-top:28px}
