@@ -16,7 +16,7 @@ const setActiveNavLink = (hash) => {
   });
 };
 
-setActiveNavLink(window.location.hash || '#journal');
+setActiveNavLink(window.location.hash || '');
 
 navLinks?.forEach((link) => {
   link.addEventListener('click', () => {
@@ -27,7 +27,7 @@ navLinks?.forEach((link) => {
 });
 
 window.addEventListener('hashchange', () => {
-  setActiveNavLink(window.location.hash || '#journal');
+  setActiveNavLink(window.location.hash || '');
 });
 
 discountButton?.addEventListener('click', () => {
