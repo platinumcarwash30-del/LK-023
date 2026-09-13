@@ -46,3 +46,10 @@
 #tours,#experience,#guides,#journal,#stay,#book,#contact{scroll-margin-top:28px}
 body:has(#guides:target) .main-nav a[href="#guides"]{color:var(--sea);border-color:var(--sea);background:rgba(100,198,211,.17);box-shadow:0 0 18px rgba(100,198,211,.16)}
 .main-nav > a[href="#journal"].active{color:var(--sea);border-color:var(--sea);background:var(--navy);box-shadow:0 0 22px rgba(100,198,211,.32),inset 0 -3px 0 var(--sea)}
+
+/* Reservation navigation keeps the same framed rhythm as the other menu items. */
+.main-nav .nav-book{position:static;border:1px solid rgba(255,255,255,.34);border-radius:0;background:rgba(6,24,39,.22);color:#fff;padding:10px 13px;box-shadow:none;animation:none;transform:none;top:auto;left:auto}
+.main-nav .nav-book::after{display:none;animation:none}
+.main-nav .nav-book span{color:var(--gold);font-weight:800;font-size:15px}
+.main-nav .nav-book:hover,.main-nav .nav-book.active{color:var(--sea);border-color:var(--sea);background:rgba(6,24,39,.48);box-shadow:0 0 18px rgba(100,198,211,.2)}
+@media (max-width:850px){.main-nav .nav-book{padding:9px 12px}}
