@@ -53,3 +53,8 @@ body:has(#guides:target) .main-nav a[href="#guides"]{color:var(--sea);border-col
 .main-nav .nav-book span{color:var(--gold);font-weight:800;font-size:15px}
 .main-nav .nav-book:hover,.main-nav .nav-book.active{color:var(--sea);border-color:var(--sea);background:rgba(6,24,39,.48);box-shadow:0 0 18px rgba(100,198,211,.2)}
 @media (max-width:850px){.main-nav .nav-book{padding:9px 12px}}
+
+/* Journal navigation uses the same framed, dark treatment as the reservation block. */
+.main-nav > a[href="#journal"]{position:static;border:1px solid rgba(255,255,255,.34);border-radius:0;background:var(--navy);color:#fff;padding:10px 13px;box-shadow:none;transform:none;top:auto;left:auto}
+.main-nav > a[href="#journal"]:hover,.main-nav > a[href="#journal"].active{color:var(--sea);border-color:var(--sea);background:var(--navy);box-shadow:0 0 18px rgba(100,198,211,.2)}
+@media (max-width:850px){.main-nav > a[href="#journal"]{padding:9px 12px}}
