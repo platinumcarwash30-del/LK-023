@@ -8,11 +8,26 @@ menuToggle?.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-nav?.querySelectorAll('a').forEach((link) => {
+const navLinks = nav?.querySelectorAll('a[href^="#"]');
+
+const setActiveNavLink = (hash) => {
+  navLinks?.forEach((link) => {
+    link.classList.toggle('active', link.getAttribute('href') === hash);
+  });
+};
+
+setActiveNavLink(window.location.hash || '#journal');
+
+navLinks?.forEach((link) => {
   link.addEventListener('click', () => {
+    setActiveNavLink(link.getAttribute('href'));
     nav.classList.remove('open');
     menuToggle?.setAttribute('aria-expanded', 'false');
   });
+});
+
+window.addEventListener('hashchange', () => {
+  setActiveNavLink(window.location.hash || '#journal');
 });
 
 discountButton?.addEventListener('click', () => {
